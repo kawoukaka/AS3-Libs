@@ -29,9 +29,7 @@ package com.kaka.display
 			return rawText;
 		}
 		
-		// Flash Player bug, cannot get the correct numLines, height when TextField.text is changed, it must wait one frame later.
-		// Since after adding moreStr (...), numLines may be change again, extra characters need to be omitted, so, using enterframe to loop through until maxrows reached.
-		private function render(evt:Event):void {
+		/	private function render(evt:Event):void {
 			if (enterframeCount == 0) {
 				showRows = (numLines > maxRows) ? maxRows : numLines;
 				trace ('showRows', showRows, 'numLines', numLines);
