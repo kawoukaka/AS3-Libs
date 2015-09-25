@@ -3,18 +3,10 @@ package  com.kaka.display
 	import flash.display.Sprite;
 	import flash.geom.Point;
 	/**
-	 * ...
-	 * public function Test() 
-		{
-			mc.addEventListener(MouseEvent.CLICK, onClickMC);
-		}
-		
-		private function onClickMC(e:MouseEvent):void 
-		{
-			(mc as ScaleByPosition).scaleByPosition(new Point(e.localX, e.localY), mc.scaleX * 1.1, mc.scaleY * 1.1);
-		}
+	 *
 	 * @author kaka
 	 */
+	 
 	public class ScaleByPosition extends Sprite
 	{
 		private var _scalePosition:Point;
