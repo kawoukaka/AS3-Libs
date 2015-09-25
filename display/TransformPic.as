@@ -155,10 +155,6 @@ package com.kaka.display{
 		}
 
 
-		/**************************************
-		** makeArea
-		** 一些辅助方法
-		***************************************/
 		public function makeArea(w:uint,h:uint,alpha:Number= 0.5):Sprite {
 
 			var area:Sprite=new Sprite  ;
