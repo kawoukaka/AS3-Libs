@@ -29,7 +29,7 @@ package com.kaka.display
 			return rawText;
 		}
 		
-		/	private function render(evt:Event):void {
+		private function render(evt:Event):void {
 			if (enterframeCount == 0) {
 				showRows = (numLines > maxRows) ? maxRows : numLines;
 				trace ('showRows', showRows, 'numLines', numLines);
