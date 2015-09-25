@@ -1,4 +1,4 @@
-//像素级碰撞检测
+
 package com.kaka.utils
 {
  import flash.display.BitmapData;
@@ -12,25 +12,14 @@ package com.kaka.utils
  
  public class HitTest
  {
-  /**
-  * --------------------- 像素级碰撞检测
-  * @param  target1    DisplayObject
-  * @param  target2    DisplayObject
-  * @param  accurracy  Number    检测的精度 [0 , 1]  0 <= n <= 1
-  * @return        Boolean  
-  */
+
   public static function complexHitTestObject ( target1:DisplayObject, target2:DisplayObject, accurracy:Number = 1 ):Boolean
   {
    accurracy > 1 ? accurracy = 1 : 0;
    return accurracy <= 0?false:complexIntersectionRectangle(target1,target2,accurracy).width != 0;
   }
  
-  /**
-   * -------------------获取矩形边框重叠区域
-   * @param  target1    DisplayObject
-   * @param  target2    DisplayObject
-   * @return        Rectangle
-   */
+
   public static function intersectionRectangle ( target1:DisplayObject, target2:DisplayObject ):Rectangle
   {
    // If either of the items don't have a reference to stage, then they are not in a display list
@@ -54,13 +43,7 @@ package com.kaka.utils
    return intersection;
   }
  
-  /**
-   * -------------------------- 获取像素重叠区域
-   * @param  target1    DisplayObject
-   * @param  target2    DisplayObject
-   * @param  accurracy  Number    精度
-   * @return        Rectangle
-   */
+ 
   public static function complexIntersectionRectangle ( target1:DisplayObject, target2:DisplayObject, accurracy:Number = 1 ):Rectangle
   {
    if ( accurracy <= 0 )
@@ -107,13 +90,7 @@ package com.kaka.utils
    return intersection;
   }
  
-  /**
-   * -------------------------获取MC的矩阵
-   * @param  target      DisplayObject
-   * @param  hitRectangle  Rectangle
-   * @param  accurracy    Number
-   * @return          Matrix
-   */
+ 
   protected static function getDrawMatrix ( target:DisplayObject, hitRectangle:Rectangle, accurracy:Number ):Matrix
   {
    var localToGlobal:Point;
