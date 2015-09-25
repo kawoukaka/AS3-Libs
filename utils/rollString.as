@@ -1,6 +1,6 @@
 ﻿package com.kaka.utils{
 
-   /* 使用示例
+   /* 
      * var isRollText:rollString;
      * isRollText = new rollString(RollTextField,{});
     */
