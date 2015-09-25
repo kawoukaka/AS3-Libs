@@ -8,7 +8,7 @@ package com.kaka.display{
 	import flash.events.EventDispatcher;
 	import flash.system.LoaderContext;
 	/**
-	 * @author xnliao
+	 * @author kaka
 	 */
 	public class ImageLoader extends EventDispatcher{
 		public var url:String;
