@@ -44,10 +44,9 @@ package com.kaka.display{
 		
 			if (camera==null) {
 				this.getVideoText.text = "找不到可用的摄像头!";
-				trace("找不到可用的摄像头!");
 				isenabled(this.camBt,false,getImageFunc);
 			} else {
-				this.getVideoText.text = "找到摄像头,点击拍照!"//+camera.name;
+				this.getVideoText.text = "找到摄像头,点击拍照!"
 				trace("找到摄像头:"+camera.name);
 				camera.setMode(this.camWidth,this.camHeight,10,true);
 				this.video.attachCamera(camera);
